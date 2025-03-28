@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wachtwoord resetten - Food Forest Fans</title>
+    <style>
+        /* Algemeen voor de pagina */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            background-image: url('https://www.fotobehang.com/media/catalog/product/cache/5b18b93ddbe5d6592c6b175f41d24454/a/d/adobestock_290992981-small.jpg');
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        /* Titel "Food Forest Fans" */
+        .title {
+            position: absolute;
+            top: 20%;
+            font-size: 48px;
+            font-weight: bold;
+            color: black;
+            text-shadow: 2px 2px 8px rgb(255, 255, 255);
+            text-align: center;
+            font-family: 'Tahoma';
+        }
+
+        /* Wachtwoord reset blok */
+        .form-container {
+            background-color: rgba(255, 255, 255, 0.8);
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+            width: 300px;
+            text-align: center;
+            z-index: 1;
+        }
+
+        h2 {
+            margin-bottom: 20px;
+            color: #333;
+        }
+
+        .input-group {
+            margin-bottom: 15px;
+            text-align: left;
+        }
+
+        .input-group label {
+            display: block;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+
+        .input-group input {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+
+        .reset-btn {
+            width: 100%;
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+
+        .reset-btn:hover {
+            background-color: #45a049;
+        }
+
+        .login-link {
+            margin-top: 10px;
+        }
+
+        .login-link a {
+            color: #4CAF50;
+            text-decoration: none;
+        }
+
+        .login-link a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Titel boven het formulier -->
+    <div class="title">Food Forest Fans</div>
+
+    <!-- Wachtwoord reset sectie -->
+    <div class="form-container">
+        <h2>Wachtwoord resetten</h2>
+        <form action="password_reset.php" method="POST">
+            <div class="input-group">
+                <label for="email">Voer je e-mailadres in</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <button type="submit" class="reset-btn">Wachtwoord resetten</button>
+        </form>
+
+        <div class="login-link">
+            <p>Herinner je je wachtwoord? <a href="signin.html">Inloggen hier</a></p>
+        </div>
+    </div>
+
+</body>
+</html>

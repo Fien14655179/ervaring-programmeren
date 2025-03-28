@@ -1,0 +1,156 @@
+/* Algemene styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Header styling */
+header {
+    background-color: #2e8b57;
+    color: white;
+    padding: 20px 0;
+}
+
+header .inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+header .logo img {
+    height: 50px;
+}
+
+header nav ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+header nav ul li {
+    margin-left: 20px;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+header nav ul li a.button {
+    background-color: #f4a261;
+    padding: 10px 20px;
+    border-radius: 5px;
+    color: white;
+}
+
+header nav ul li a.button:hover {
+    background-color: #e76f51;
+}
+
+/* Winkelpagina styling */
+.shop {
+    max-width: 1200px;
+    margin: 50px auto;
+    padding: 0 20px;
+    text-align: center;
+}
+
+.shop h2 {
+    font-size: 36px;
+    margin-bottom: 40px;
+}
+
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 40px;
+}
+
+.product-item {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.product-item img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.product-item h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.product-item p {
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+
+.product-item a.button {
+    display: inline-block;
+    background-color: #2e8b57;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.product-item a.button:hover {
+    background-color: #1e6b45;
+}
+
+/* Winkelmand styling */
+.cart {
+    margin-top: 50px;
+    background-color: #f4f4f4;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.cart h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.cart p {
+    font-size: 18px;
+    color: #555;
+}
+
+/* Footer styling */
+footer {
+    background-color: #2e8b57;
+    color: white;
+    padding: 20px 0;
+    margin-top: 50px;
+}
+
+footer .Footer {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+}
+
+footer .Footer .Socialemedia a {
+    color: white;
+    font-size: 24px;
+    margin: 0 10px;
+}
+
+footer .Footer .Socialemedia a:hover {
+    color: #f4a261;
+}
